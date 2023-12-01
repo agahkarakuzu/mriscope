@@ -1,0 +1,3 @@
+# About 
+
+The field of neuroimaging has progressed significantly with the introduction of advanced computational methods and high-resolution imaging techniques, bringing to the fore questions about the reproducibility of research findings. Reproducibility is essential for validating results, consolidating knowledge, and fostering scientific advancements. This review synthesizes insights from 31 recent neuroimaging articles to examine the current state of reproducibility within the field, highlighting key practices and challenges.
