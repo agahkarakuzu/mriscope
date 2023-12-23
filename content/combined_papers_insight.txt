@@ -1,0 +1,466 @@
+
+Paper number: 1
+Year: 2022
+Title: In vivo magnetic resonance 31P‐Spectral Analysis With Neural Networks: 31P‐SPAWNN
+Authors: J. Songeon, S. Courvoisier, L. Xin, T. Agius, Oscar Dabrowski, A. Longchamp, F. Lazeyras, A. Klauser
+
+Keywords: 31P‐SPAWNN, neural networks, reproducibility, magnetic resonance spectroscopy
+
+Study Achievements and Reproducibility Summary:
+
+1. The study introduced a new artificial intelligence framework, 31P‐SPAWNN, for analyzing 31P magnetic resonance spectra, demonstrating that it provides a fast and flexible alternative to traditional least-square fitting methods.
+2. Reproducibility was exemplary as the authors shared the source code, simulations, their deep learning network, and sample datasets, enabling other researchers to test, validate, and reproduce their results easily.
+3. Open sharing of the code and data was motivated by a commitment to collaborative advancement in MR research and the drive to facilitate incremental knowledge growth within the community without redundant effort.
+4. The authors suggest best practices for sharing research repositories, including comprehensive documentation, logical organization, and the use of tools like Docker or Singularity to improve the portability and consistency of the computational research environment, thereby enhancing reproducibility further.
+
+ ---------------------------------------------------
+Paper number: 2
+Year: 2020
+Title: Comparison of single breath hyperpolarized 129Xe MRI with dynamic 19F MRI in cystic fibrosis lung disease
+Authors: A. McCallister, S. Chung, M. Antonacci, Margret Z Powell, Agathe S. Ceppe, S. Donaldson, Yueh Z. Lee, R. Branca, J. Goralski
+
+Keywords: Cystic Fibrosis, Hyperpolarized 129Xe MRI, Dynamic 19F MRI, Ventilation Abnormalities
+
+Study Achievements and Reproducibility Summary:
+
+1. The study achieved a quantitative comparison between dynamic 19F MRI and single breath hyperpolarized 129Xe MRI for detecting ventilation abnormalities in subjects with mild CF lung disease, contributing valuable insights into the efficacy of different imaging modalities for CF assessment.
+2. Reproducibility was enhanced by sharing the code and data that reproduce several figures, allowing others in the research community to validate and potentially extend the findings.
+3. The decision to share came during the submission process, and recognizing the benefits, including feedback and collaboration, the team has been motivated to continue sharing for future publications.
+4. The researchers advocate for culture change within the MRI community where data sharing becomes an expectation and plan to explore additional reproducibility tools, such as explanatory videos, to further disseminate their research methods and findings.
+
+ ---------------------------------------------------
+Paper number: 3
+Year: 2019
+Title: Extreme MRI: Large‐scale volumetric dynamic imaging from continuous non‐gated acquisitions
+Authors: Frank Ong, Xucheng Zhu, Joseph Y. Cheng, Kevin M. Johnson, P. Larson, S. Vasanawala, M. Lustig
+
+Keywords: Dynamic MRI, Non-gated Acquisition, Large-scale Volumetric Imaging, Pulmonary Imaging
+
+Study Achievements and Reproducibility Summary:
+
+1. The study achieved the development of a framework capable of reconstructing large-scale volumetric dynamic MRI images from continuous, non-gated acquisitions, with successful applications demonstrated in pulmonary and DCE imaging.
+2. Reproducibility was prioritized through the sharing of code and an interactive Google Colab notebook demo, which allows for easy visualization and manipulation of the reconstruction process.
+3. The culture of sharing within UC Berkeley and the research team directly influenced the early decision to share code/data, with the practice of version controlling, documentation, and unit tests facilitating the sharing process.
+4. Encouraging open-source contributions in the MRI community via showcases, hands-on sessions, and interviews has proven effective, and the authors intend to continue these efforts while exploring additional platforms like Zenodo for data hosting.
+
+ ---------------------------------------------------
+Paper number: 4
+Year: 2021
+Title: Improved 3D real‐time MRI of speech production
+Authors: Ziwei Zhao, Yongwan Lim, D. Byrd, Shrikanth S. Narayanan, K. Nayak
+
+Keywords: Real-Time MRI, Speech Production, 3D Reconstruction, Variable-Density Sampling
+
+Study Achievements and Reproducibility Summary:
+
+1. The study achieved improvements in 3D real-time magnetic resonance imaging (MRI) of speech production, offering increased spatio-temporal sharpness by using a novel stack-of-spiral sampling and reconstruction method.
+2. Reproducibility was enhanced by sharing well-documented code and data, as well as utilizing BART, a widely-recognized MRI toolbox, ensuring that the research can be re-executed and validated by others.
+3. The researchers chose to share code and data to maximize the potential impact of their work, facilitate better understanding, and contribute to the growing culture of reproducible research within their community.
+4. The authors advocate that recognizing and honoring research with shared code/data, spreading awareness of the impact of open-source contributions, and enhancing educational resources can encourage more researchers to adopt reproducible research practices. They also intend to explore additional practices, such as shell scripts and interactive notebooks, for future projects.
+
+ ---------------------------------------------------
+Paper number: 5
+Year: 2019
+Title: Steady‐state imaging with inhomogeneous magnetization transfer contrast using multiband radiofrequency pulses
+Authors: Shaihan J. Malik, R. Teixeira, D. West, Tobias C. Wood, J. Hajnal
+
+Keywords: Inhomogeneous Magnetization Transfer, Multiband RF Pulses, Myelin Imaging, Steady-State MRI
+
+Study Achievements and Reproducibility Summary:
+
+1. The study developed a technique for generating inhomogeneous magnetization transfer (ihMT) contrast in MRI using nonselective multiband radiofrequency pulses during rapid steady-state pulse sequences, potentially improving the specificity of imaging myelinated tissues.
+2. Reproducibility was supported by the sharing of robustly documented code on GitHub, encouraging others to reproduce, understand, and extend the methods used.
+3. The open-source ethos of the research group and support from the UK funding agencies have contributed to the continuous practice of sharing code and data as a default policy.
+4. While sharing non-human data and code for image reconstruction and simulation is standard practice for the group, future consideration may include exploring the sharing of in vivo data, all with the aim of enhancing reproducibility and encouraging cumulative science.
+
+ ---------------------------------------------------
+Paper number: 6
+Year: 2020
+Title: A novel gamma GLM approach to MRI relaxometry comparisons
+Authors: Rohan Kapre, Junhan Zhou, Xinzhe Li, L. Beckett, A. Louie
+
+Keywords: Gamma GLM, MRI Relaxometry, CV Analysis, Data Fitting
+
+Study Achievements and Reproducibility Summary:
+
+1. The study introduced a novel statistical framework using a gamma generalized linear model identity link (GGLM‐ID) that accounts for the constant coefficient of variation in MRI relaxometry data, offering more accurate parameter estimates compared to standard linear models.
+2. Reproducibility is enhanced through the sharing of R Markdown PDF documents detailing the analysis method, alongside an R Shiny dashboard that allows for interactive data fitting without the need for extensive programming knowledge.
+3. The authors were motivated by MRM guidelines and a commitment to transparency to share their code, aiming to make their methods widely accessible and facilitate the adoption of their recommendations.
+4. In future work, they plan to continue sharing code and data, potentially utilizing more interactive and educational tools like Jupyter Notebooks or alternative platforms that further support open science and reproducible research practices.
+
+ ---------------------------------------------------
+Paper number: 7
+Year: 2021
+Title: Analysis of deep complex‐valued convolutional neural networks for MRI reconstruction and phase‐focused applications
+Authors: Elizabeth K. Cole, Joseph Y. Cheng, J. Pauly, S. Vasanawala
+
+Keywords: Complex-Valued CNNs, MRI Reconstruction, Phase Imaging, Deep Learning
+
+Study Achievements and Reproducibility Summary:
+
+1. The study rigorously investigated the use of end-to-end complex-valued convolutional neural networks (CNNs) for accelerated MRI reconstruction, highlighting their advantages over 2-channel real-valued networks, especially for phase-focused applications.
+2. Reproducibility was ensured by sharing the project's code on GitHub, including a requirements file to specify code dependencies, and by detailing the training/testing processes for their deep learning models.
+3. The decisions on data/code sharing were guided by lab and institutional policies, as well as data privacy considerations, and active steps were taken to anonymize data sets and secure necessary permissions for sharing.
+4. To promote a culture of open source code contribution, the researcher recommended MRI challenges where code is a submission requirement and showed an interest in exploring new platforms, such as Weights & Biases, for enhanced tracking and reproducibility of research results.
+
+ ---------------------------------------------------
+Paper number: 8
+Year: 2022
+Title: Fourier‐based decomposition for simultaneous 2‐voxel MRS acquisition with 2SPECIAL
+Authors: L. Riemann, C. Aigner, R. Mekle, O. Speck, G. Rose, B. Ittermann, S. Schmitter, A. Fillmer
+
+Keywords: 2-Voxel MRS, 2SPECIAL Sequence, vGRAPPA Decomposition, 7T MRI
+
+Study Achievements and Reproducibility Summary:
+
+1. This study developed and successfully implemented a Fourier-based decomposition method using a voxel-GRAPPA (vGRAPPA) approach to simultaneously acquire and discern spectroscopic data from two MRS voxels within the brain at 7T, achieved by a multi-banded 2 spin-echo, full intensity acquired localized (2SPECIAL) sequence.
+2. Reproducibility was underscored by sharing a meticulously documented GitLab code repository that included example data, the vGRAPPA algorithm, and a demo script, inviting external researchers to assess and build on the work.
+3. From inception, there was a clear intent to share the code and data, inspired by a broader culture of transparency and accountability in using public funds for research, as well as initiatives from scientific organizations that encourage reproducible practices.
+4. To further stimulate the sharing of open-source materials within the MRI community, the researchers suggest giving published data sets and code equivalent scientific merit to traditional publications, which would acknowledge the time and effort required to produce high-quality, reusable research outputs.
+
+ ---------------------------------------------------
+Paper number: 9
+Year: 2021
+Title: Accurate free‐water estimation in white matter from fast diffusion MRI acquisitions using the spherical means technique
+Authors: A. Tristán-Vega, Guillem París, R. de Luis-García, S. Aja‐Fernández
+
+Keywords: Free-Water Estimation, Fast Diffusion MRI, Spherical Means Technique, White Matter
+
+Study Achievements and Reproducibility Summary:
+
+1. The study achieved an accurate estimation of the free-water partial volume in white matter from fast diffusion MRI acquisitions using a spherical means technique, with a methodology not requiring strong sensitizing gradients or extensive different b-value collections.
+2. Reproducibility was enhanced by integrating the newly developed tools into the dMRI-Lab, a MATLAB toolbox that is maintained and kept available publicly, allowing for easy application and testing of the research outcomes by the broader scientific community.
+3. The researchers recognized the increased visibility and potential for adoption that comes with sharing code, leading them to commit to making their diffusion MRI processing tools readily available within their evolving toolbox.
+4. They believe that institutional recognition for software development and maintenance alongside traditional academic metrics such as publication numbers could encourage more researchers to invest time in creating open-source code, which is currently underestimated in the evaluation of researchers' contributions.
+
+ ---------------------------------------------------
+Paper number: 10
+Year: 2020
+Title: Accelerated calibrationless parallel transmit mapping using joint transmit and receive low-rank tensor completion
+Authors: A. Hess, I. Dragonu, M. Chiew
+
+Keywords: Parallel Transmit Mapping, Accelerated MRI, Calibrationless Imaging, Low-rank Tensor Completion
+
+Study Achievements and Reproducibility Summary:
+
+1. The study developed an algorithm to reconstruct undersampled parallel transmit field maps efficiently for both body and brain MRI without the need for calibration data, using a joint transmit and receive low-rank tensor completion approach.
+2. Reproducibility was facilitated by sharing all scripts and data necessary to reproduce every figure published in the paper, enabling independent validation and educational opportunities for others.
+3. The researchers had a proactive approach to sharing code and data from the start of the project, which allowed for thorough documentation and adherence to good practices. They also ensured data protection compliance by re-organizing brain dataset releases to avoid reconstruction of de-anonymizing facial features.
+4. They suggest that rewarding and citing open-source contributions, as well as potentially creating a dedicated category for papers detailing community resource releases, could further encourage the MRI community to contribute open-source code alongside research papers. Additionally, they express interest in using container tools like Docker or Singularity for managing dependencies in future work.
+
+ ---------------------------------------------------
+Paper number: 11
+Year: 2021
+Title: A model‐based framework for correcting B1+ inhomogeneity effects in magnetization transfer saturation and inhomogeneous magnetization transfer saturation maps
+Authors: C. Rowley, Jennifer S. W. Campbell, Zhe Wu, I. Leppert, D. Rudko, G. Pike, Christine L. Tardif
+
+Keywords: B1 Inhomogeneity Correction, Magnetization Transfer Saturation, Numerical Simulation, MRI Mapping
+
+Study Achievements and Reproducibility Summary:
+
+1. The study proposed a model-based framework to correct ΔB1+ (B1 inhomogeneity) errors in magnetization transfer saturation (MTsat) and inhomogeneous magnetization transfer (ihMT) saturation maps, using an R1 and B1+ map alongside numerical simulations of the sequence.
+2. Reproducibility was supported by sharing the code associated with the paper, featuring extensive and detailed documentation within the code and on external platforms such as GitHub.
+3. The code release aligns with the lab's open science practices, supported by their institution, particularly after paper publication and peer-review to ensure meaningful and validated outputs are distributed.
+4. By releasing their code, the authors aimed to facilitate the MRI community's ability to implement B1 inhomogeneity corrections, with the benefit of aiding peer validation, enhancing educational value, and fostering good internal documentation and archiving practices. They also expressed an interest in exploring interactive scripting tools like Jupyter Notebooks in future work.
+
+ ---------------------------------------------------
+Paper number: 12
+Year: 2020
+Title: Myelin water fraction estimation using small‐tip fast recovery MRI
+Authors: Steven T Whitaker, Gopal Nataraj, J. Nielsen, J. Fessler
+
+Keywords: Myelin Water Fraction, Small-Tip Fast Recovery MRI, Optimization, Brain Imaging
+
+Study Achievements and Reproducibility Summary:
+
+1. The study demonstrates the feasibility of using an optimized set of small-tip fast recovery (STFR) MRI scans for rapidly estimating the myelin water fraction (MWF) in the brain, providing an efficient approach to brain imaging.
+2. Reproducibility was prioritized by sharing all the code used in the research, accompanied by scripts that allow for the reproduction of every figure in the paper, fostering transparency and enabling peers to build upon their work.
+3. Sharing was an integral component from the beginning of the project, with the understanding that releasing code and data would contribute to educational efforts and facilitate validation by others in the field.
+4. The researchers suggest embedding reminders about code/data sharing within the manuscript submission system and considering code/data citations for open-source contributions, thereby encouraging more MRI researchers to share their work openly. They also made use of Julia as a programming language for its interactive nature and swift execution, and expressed an interest in enhancing documentation and exploring Jupyter Notebooks for future projects.
+
+ ---------------------------------------------------
+Paper number: 13
+Year: 2021
+Title: Image‐ versus histogram‐based considerations in semantic segmentation of pulmonary hyperpolarized gas images
+Authors: N. Tustison, T. Altes, K. Qing, M. He, G. Miller, B. Avants, Y. Shim, J. Gee, J. Mugler, J. Mata
+
+Keywords: Segmentation, Hyperpolarized Gas MRI, Algorithm Comparison, Pulmonary Imaging
+
+Study Achievements and Reproducibility Summary:
+
+1. The study explored and characterized the differences between histogram-based and image-based algorithms for segmenting hyperpolarized gas lung images, assessing their respective capabilities and limitations.
+2. Reproducibility was emphasized through the sharing of scripts and data necessary to reproduce every figure in the paper, making the research transparent and allowing others to verify and build upon the findings.
+3. The authors decided to share their resources from the beginning of the project, advocating the benefits of open-source development as both a means to enhance the quality of work and to facilitate collaborative opportunities.
+4. By releasing detailed documentation and contributing to broader software projects like the Advanced Normalization Tools (ANTs), the researchers have demonstrated a commitment to long-term usability and improvement of their software, all the while fostering a culture of openness and educational growth within the MRI community. They also expressed an interest in further integrating tools like Rmarkdown and Jupyter notebooks for increased reproducibility in future work.
+
+ ---------------------------------------------------
+Paper number: 14
+Year: 2019
+Title: Artificial neural network for myelin water imaging
+Authors: Jieun Lee, Doo-Hee Lee, J. Choi, Dongmyung Shin, Hyeong-Geol Shin, Jongho Lee
+
+Keywords: Myelin Water Imaging, Artificial Neural Network, Deep Learning, Real-Time Processing
+
+Study Achievements and Reproducibility Summary:
+
+1. The study achieved the application and demonstration of an artificial neural network (ANN), specifically a convolutional neural network, for real-time processing of myelin water imaging (MWI), presenting a significant advance in speed without compromising accuracy.
+2. Reproducibility was prioritized by sharing not only the ANN code but also the pre-trained deep learning network, facilitating direct application and comparative studies by other researchers.
+3. The researchers adopted a proactive approach to sharing, embedding this practice in the early stages of their research to enhance collaborative opportunities and research validation.
+4. While sharing the code and the trained models was routine, the researchers faced challenges in data sharing due to institutional review board (IRB) policies, which they now aim to address in future projects to further support reproducible research practices. They encourage using their trained model as-is or as a seed for transfer learning to adapt to other experimental setups.
+
+ ---------------------------------------------------
+Paper number: 15
+Year: 2022
+Title: VESPA ASL: VElocity and SPAtially Selective Arterial Spin Labeling
+Authors: Joseph G. Woods, E. Wong, E. Boyd, D. S. Bolar
+
+Keywords: Arterial Spin Labeling, Velocity-Selective ASL, Cerebral Blood Flow, Transit Time Measurement
+
+Study Achievements and Reproducibility Summary:
+
+1. The study introduced a novel pulse sequence called VESPA ASL, which combines velocity-selective and pseudo-continuous ASL techniques to simultaneously label different arterial blood pools for robust measurement of cerebral blood flow (CBF) and arterial transit times (ATT) within the brain.
+2. Reproducibility was ensured by sharing all the requisite data, simulation code, and analysis code on Zenodo, enabling peers to validate results and extend the research to new questions or client applications.
+3. A commitment to transparency and the educational value of shared resources motivated the researchers to share their work, with the intention of sharing established from the project's commencement.
+4. The researchers endorse efforts like MRM Highlights to inspire open-source contributions and suggest that making code sharing advantageous or essential for researchers’ careers could further promote widespread openness in the scientific community. They also express interest in providing code that is broadly compatible across different systems without user modification for future projects.
+
+ ---------------------------------------------------
+Paper number: 16
+Year: 2020
+Title: Portable and platform‐independent MR pulse sequence programs
+Authors: C. Cordes, S. Konstandin, David A Porter, M. Günther
+
+Keywords: MRI Sequence Programming, Pulse Sequence, Vendor-Independence, Modular Development
+
+Study Achievements and Reproducibility Summary:
+
+1. The study introduced gammaSTAR, a framework enabling the creation of MR pulse sequence programs that are not only portable but also platform-independent, allowing for vendor-neutral development of MRI sequences.
+2. The reproducibility of this research was ensured by sharing the code for the framework, along with Dockerfiles that reproduce the necessary coding environment, which allows peers to execute the software under the same conditions the authors used.
+3. The decision to share code and data was inherent from the start, motivated by a wish to enhance the framework's growth through use by the broader community and to invite scrutiny and feedback for iterative improvement.
+4. The authors mentioned future interests in decentralized web technologies such as the Interplanetary File System (IPFS) and blockchain for robust reproducibility and easier contributions by individuals. They also encouraged researchers developing software to consider using web technologies for user interface design and to explore Docker as a solution to ensure software is installed correctly.
+
+ ---------------------------------------------------
+Paper number: 17
+Year: 2021
+Title: Vendor-neutral sequences and fully transparent workflows improve inter-vendor reproducibility of quantitative MRI
+Authors: A. Karakuzu, L. Biswas, J. Cohen-Adad, N. Stikov
+
+Keywords: Quantitative MRI, Vendor-Neutral Sequences, Reproducibility, Multi-Center Studies
+
+Study Achievements and Reproducibility Summary:
+
+1. The study developed an end-to-end workflow that begins with a vendor-neutral acquisition protocol and demonstrated that using vendor-neutral sequences reduces inter-vendor variability in quantities like T1, MTR (magnetization transfer ratio), and MTsat (magnetization transfer saturation) measurements.
+2. The reproducibility of the research is strengthened by the sharing of open-source pulse sequences, Docker containers, BIDS-compliant data, and an interactive Jupyter Book containing code that generates the figures from the study.
+3. The decision to share code and data was made early in the study, driven by institutional policies and lab culture that prioritize open science and the sharing of research materials.
+4. The authors utilized open-source tools to create the vendor-neutral sequences and enable transparent pipelines, making their work highly reproducible and useful for quantitative MRI research and multicenter clinical trials. They suggest that offering incentives might increase contributions of open-source content, and they express interest in developing and sharing interactive dashboards for future work to enhance the reproducibility and visualization of research findings.
+
+ ---------------------------------------------------
+Paper number: 18
+Year: 2019
+Title: Submitted to Magnetic Resonance in Medicine Deep Learning How to Fit an Intravoxel Incoherent Motion Model to Diffusion-Weighted MRI
+Authors: S. Barbieri, O. Gurney-Champion, R. Klaassen, H. Thoeny
+
+Keywords: Deep Neural Network, Intravoxel Incoherent Motion, Diffusion-Weighted MRI, Quantitative Analysis
+
+Study Achievements and Reproducibility Summary:
+
+1. This study developed a deep neural network (DNN) for fitting intravoxel incoherent motion (IVIM) models to diffusion-weighted magnetic resonance imaging (DW-MRI) data and demonstrated successful training for IVIM parameter estimation.
+2. Reproducibility is supported through the sharing of the code and the pre-trained network, enabling the DNN to be applied directly or used as a foundation for further research, improving accessibility and verification of results.
+3. The authors chose to share their code from the early stages of the project, with a commitment to transparency and open science that allows for the reproducibility of methods and results.
+4. They also shared a Jupyter Notebook as a demo to help others interactively understand and execute their analysis, illustrating a commitment to open-source practices and improving the communication of complex computational methods to a broader audience. They believe that providing detailed documentation and sharing clinical data responsibly will facilitate open science and reduce the need for duplicative data collection efforts.
+
+ ---------------------------------------------------
+Paper number: 19
+Year: 2020
+Title: Phase unwrapping with a rapid opensource minimum spanning tree algorithm (ROMEO)
+Authors: B. Dymerska, K. Eckstein, Beáta Bachratá, B. Siow, S. Trattnig, K. Shmueli, S. Robinson
+
+Keywords: Phase Unwrapping, Minimum Spanning Tree, Quantitative MRI, High Field Strength MRI
+
+Study Achievements and Reproducibility Summary:
+
+1. The study achieved the development of a rapid and accurate MRI phase unwrapping technique called ROMEO, designed to address the challenges of high magnetic field strengths and the presence of metal implants or post-operative cavities by incorporating both spatial and temporal coherence information.
+2. Reproducibility is promoted through sharing open-source code, accompanying executables for different operating systems, and detailed documentation, all of which enable the application of ROMEO by other researchers and its verification against traditional methods.
+3. The decision to share code and data was made from the outset to ensure transparent validation of the results and to facilitate broader dissemination and feedback that enhance the method's usability and performance.
+4. The authors highlighted the importance of sharing not just algorithms but also tools and the ethos of reviewing the results, rather than relying solely on selected images in manuscript figures. They advocate for comprehensive documentation, realistic input data for testing, visualization of significant algorithm steps, and cooperative development with thorough testing to ensure long-term usability and enhancement of the code.
+
+ ---------------------------------------------------
+Paper number: 20
+Year: 2019
+Title: FatSegNet: A fully automated deep learning pipeline for adipose tissue segmentation on abdominal dixon MRI
+Authors: Santiago Estrada, Ran Lu, Sailesh Conjeti, Ximena Orozco-Ruiz, Joana Panos-Willuhn, M. Breteler, M. Reuter
+
+Keywords: Deep Learning, Adipose Tissue Segmentation, Dixon MRI, Automation
+
+Study Achievements and Reproducibility Summary:
+
+1. The study introduced FatSegNet, a fast and fully automated deep learning pipeline designed to accurately segment visceral and subcutaneous adipose tissue from abdominal Dixon MRI scans.
+2. Reproducibility was ensured by sharing both the source code for FatSegNet and the Dockerfiles necessary to create an environment to run the software, allowing users to replicate the environment and reproduce the results.
+3. The authors had a commitment to open-source sharing from the project's inception, with the intent to provide the scientific community with tools that can be readily validated, replicated, and applied to different datasets.
+4. Future directions aim to increase the flexibility of data sharing as part of informed consent, which would enable the release of example cases alongside the tools. The authors recommend Docker containers to overcome environment setup challenges and ensure portability and consistency across different systems.
+
+ ---------------------------------------------------
+Paper number: 21
+Year: 2021
+Title: Generalized Bloch model: A theory for pulsed magnetization transfer
+Authors: J. Assländer, Cem Gultekin, Sebastian Flassbeck, S. Glaser, D. Sodickson
+
+Keywords: Magnetization Transfer, Bloch Model, Classical Model, Semi-solid Spin Pool
+
+Study Achievements and Reproducibility Summary:
+
+1. The study introduced the Generalized Bloch model, a theoretical construct to describe the pulsed magnetization transfer process in MRI, particularly for nuclei in semi-solid pools and their interaction with nuclei in water.
+2. Reproducibility was enhanced by sharing the full implementation code, datasets, and figure reproduction scripts, permitting users to replicate the research findings and utilize the model for their experiments.
+3. A commitment to sharing materials as part of the publication process was evident, with the understanding that such practices not only benefit the scientific community by promoting collaboration and progress but also assist the authors in gaining credibility and visibility for their work.
+4. Alongside standard reproducibility practices, the authors went a step further by creating a comprehensive tutorial with interactive figures and MyBinder links, thus offering a deepened understanding of the Generalized Bloch model and encouraging its practical application and examination by peers. They emphasize learning how to appropriately share larger datasets while addressing privacy concerns as a future goal for reproducible research habits.
+
+ ---------------------------------------------------
+Paper number: 22
+Year: 2022
+Title: Correcting inter‐scan motion artifacts in quantitative R 1 mapping at 7T
+Authors: Yael Balbastre, Ali Aghaeifar, Nadège Corbin, Mikael Brudfors, John Ashburner, M. Callaghan
+
+Keywords: Motion Artifacts Correction, R1 Mapping, 7T MRI, Quantitative Analysis
+
+Study Achievements and Reproducibility Summary:
+
+1. The study developed and validated two new correction algorithms to address inter-scan motion artifacts in quantitative R1 mapping at 7T, providing reliable methods that do not require body coil references.
+2. Reproducibility was enhanced by the integration of the proposed algorithms into an existing open-source toolbox (hMRI), and by sharing scripts that reproduce all simulation figures, allowing researchers to replicate and build upon their work.
+3. A strong commitment to open science, beginning with public development on GitHub and continuing through the final stages of the research, facilitated the sharing of materials alongside the published article.
+4. The authors advocate that increasing recognition of code as a crucial scientific output, alongside traditional publications, could promote the sharing of open-source content. They also welcome contributions to their toolbox and suggest that researchers ensure their code can work on various systems and is free of local dependencies for true reproducibility.
+
+ ---------------------------------------------------
+Paper number: 23
+Year: 2020
+Title: PreQual: An automated pipeline for integrated preprocessing and quality assurance of diffusion weighted MRI images
+Authors: L. Cai, Qi Yang, Colin B. Hansen, V. Nath, Karthik Ramadass, Graham W. Johnson, Benjamin N. Conrad, Brian D. Boyd, J. Begnoche, L. Beason-Held, A. Shafer, S. Resnick, Warren D. Taylor, G. Price, V. Morgan, B. Rogers, K. Schilling, B. Landman
+
+Keywords: Diffusion Weighted Imaging, Automated Processing Pipeline, Quality Assurance, Deep Learning
+
+Study Achievements and Reproducibility Summary:
+
+1. The study developed PreQual, an automated processing pipeline designed to conduct preprocessing and quality assurance of diffusion weighted MRI images, which integrates a variety of standard tools and produces comprehensive quality reports.
+2. Reproducibility is augmented by open-source sharing of the pipeline code and containerizing the environment using Singularity, enabling users across the MRI community to implement PreQual easily and reliably.
+3. The commitment to open science principles guided the decision to openly share the code and was reflected in the research practices of the lab and institution, which emphasize accessibility and collaboration in clinical and basic science studies.
+4. The authors recommend adopting containerization as standard practice for newly published pipelines to facilitate reproducibility and believe it is essential for advancing reproducible science. They plan to continue making their tools open-source, and in the future, they aspire to share data as widely as possible within the bounds of privacy protection.
+
+ ---------------------------------------------------
+Paper number: 24
+Year: 2020
+Title: Pharmacokinetic modeling of dynamic contrast‐enhanced MRI using a reference region and input function tail
+Authors: Z. Ahmed, I. Levesque
+
+Keywords: Deep Learning, Quantitative R1 Mapping, Motion Artifacts, 7T MRI
+
+Study Achievements and Reproducibility Summary:
+
+1. The study developed a pipeline that improves the reproducibility of R1 mapping at 7T MRI by using a new model to compensate for inter-scan motion artifacts.
+2. The study's reproducibility is supported by sharing the pipeline code as part of an open-source toolbox (hMRI) and providing scripts that allow the reproduction of all simulation figures.
+3. A highly committed approach to open science from both the lab and institution ensures that code sharing is a standard practice for all publications.
+4. The researchers emphasize starting with the intention to release code when drafting the publication, as this promotes careful and reproducible research practices and benefits both the scientific community and the authors.
+
+ ---------------------------------------------------
+Paper number: 25
+Year: 2020
+Title: Improving FLAIR SAR efficiency at 7T by adaptive tailoring of adiabatic pulse power through deep learning B1+ estimation
+Authors: Shahrokh Abbasi-Rad, Kieran O’Brien, Samuel Kelly, V. Vegh, A. Rodell, Y. Tesiram, Jin Jin, M. Barth, S. Bollmann
+
+Keywords: Deep Learning, SAR Efficiency, FLAIR MRI, B1+ Estimation
+
+Study Achievements and Reproducibility Summary:
+
+1. The study introduced a method to reduce specific absorption rate (SAR) in FLAIR sequences at 7T MRI by adaptively tailoring the power of adiabatic radiofrequency pulses using deep learning for B1+ estimation.
+2. Reproducibility of the research was supported by sharing the deep learning model, code, and training datasets publicly, allowing other researchers to test, apply, and potentially improve upon the method.
+3. The team decided during the revision process of their manuscript to share code and data to facilitate validation and further exploration by the community, inspired by skepticism from a reviewer that led to a positive outcome.
+4. The authors shared a Jupyter Notebook via Google Colab for running the model without installation hassles; they suggest researchers adopt open source sharing early on and consider the type of software license when releasing code. They aspire to make sharing example cases alongside tools a standard practice, pending appropriate data sharing permissions.
+
+ ---------------------------------------------------
+Paper number: 26
+Year: 2020
+Title: RARE two‐point Dixon with dual bandwidths
+Authors: H. Rydén, J. Berglund, Ola Norbeck, Enrico Avventi, T. Sprenger, A. van Niekerk, S. Skare
+
+Keywords: Dual Bandwidths, Dixon MRI, RARE Imaging, SNR Improvement
+
+Study Achievements and Reproducibility Summary:
+
+1. The study developed a dual bandwidth rapid acquisition with relaxation enhancement (RARE) Dixon imaging technique, which is used to improve the signal-to-noise ratio (SNR) in MRI by removing dead times between refocusing pulses and preventing redundant chemical shift encoding.
+2. Reproducibility was supported through the sharing of code and interactive figures that help other researchers to understand complex results easily and explore the techniques implemented within the paper.
+3. A proactive approach to sharing was demonstrated, with the researchers making their interactive plots available as an intuitive resource for understanding their method's impact.
+4. The authors believe in open science practices, planning to continue sharing their work in future publications. They encourage the MRI community to share data/code where beneficial and suggest that peer review could include an evaluation of reproducibility efforts to enhance contribution standards.
+
+ ---------------------------------------------------
+Paper number: 27
+Year: 2020
+Title: Adaptive Baseline Fitting for 1H MR Spectroscopy Analysis
+Authors: Martin Wilson
+
+Keywords: Baseline Fitting, MR Spectroscopy, Algorithm Development, Quantitative Analysis
+
+Study Achievements and Reproducibility Summary:
+
+1. The study introduced an adaptive baseline fitting algorithm (ABfit) that improves the accuracy of metabolite estimation in MR spectroscopy, particularly useful at short echo-times where interference from baseline artifacts is pronounced.
+2. Reproducibility is enhanced by the shared R code, accompanied by detailed instructions that allow researchers to reproduce the results reported in the paper completely.
+3. A commitment to transparent and reproducible research guided the decision to share code from the inception of the project, with a lab culture supportive of open sharing aligned with the trend toward open science.
+4. The authors encourage code sharing as a means to validate methods and findings, and they consider sharing code and data an essential component of facilitating scientific progress and community collaboration. They plan to adopt more consistent practices for structuring directories and naming files in future research to make reproducibility even more straightforward.
+
+ ---------------------------------------------------
+Paper number: 28
+Year: 2021
+Title: Deep neural network based CEST and AREX processing: Application in imaging a model of Alzheimer’s disease at 3 T
+Authors: Jianpan Huang, J. H. Lai, K. Tse, G. Cheng, Yang Liu, Zilin Chen, Xiongqi Han, Lin Chen, Jiadi Xu, Kannie W. Y. Chan
+
+Keywords: Deep Learning, CEST MRI, AREX, Alzheimer’s Imaging
+
+Study Achievements and Reproducibility Summary:
+
+1. The study optimized and applied a deep learning-based pipeline (deepCEST and deepAREX) for CEST MRI imaging, improving analysis for brains affected by Alzheimer's disease at 3T.
+2. Reproducibility was fostered by sharing the code and sample data via an easily accessible platform, demonstrating the implementation's effectiveness and enabling others to apply the techniques to their datasets.
+3. Sharing was motivated to promote the deep learning-based processing method for CEST/AREX and to allow others to test and incorporate the approach into their research.
+4. The authors encourage sharing deep learning implementations with detailed instructions for use, offering training models and suggesting that sharing with repositories like Zenodo, which assigns DOIs to shared items, could be a useful practice for future research efforts.
+
+ ---------------------------------------------------
+Paper number: 29
+Year: 2020
+Title: B1 inhomogeneity correction of RARE MRI with transceive surface radiofrequency probes
+Authors: P. Delgado, A. Kuehne, João S Periquito, J. Millward, A. Pohlmann, S. Waiczies, T. Niendorf
+
+Keywords: B1 Inhomogeneity, RARE MRI, Surface RF Coils, Quantitative MRI
+
+Study Achievements and Reproducibility Summary:
+
+1. The study optimized methods for correcting B1 inhomogeneity artifacts commonly caused by surface RF coils in fast spin-echo (RARE) MRI sequences at ultrahigh magnetic fields.
+2. Reproducibility was facilitated by making the correction code and data openly available, so other researchers can apply the methods to their own data and benefit from improved B1 corrections.
+3. The decision to share code and data was inspired by the positive practices in the field, following a trend toward transparency. The authors felt collaborating and sharing within the scientific community was not just a responsibility but beneficial for advancement.
+4. The authors provide thorough documentation in their software repository to ensure the reliability and longevity of their code. They also express the importance of code sharing for the credibility of research publications and advocate for open science initiatives that reinforce the value of sharing among the MRI community.
+
+ ---------------------------------------------------
+Paper number: 30
+Year: 2020
+Title: FSL‐MRS: An end‐to‐end spectroscopy analysis package
+Authors: William T. Clarke, C. Stagg, S. Jbabdi
+
+Keywords: Magnetic Resonance Spectroscopy, Toolbox, FSL-MRS, Open-Source
+
+Study Achievements and Reproducibility Summary:
+
+1. The study developed FSL-MRS, a comprehensive open-source toolbox for magnetic resonance spectroscopy analysis that integrates with the FSL software library.
+2. Reproducibility was a focal point, achieved by sharing the FSL-MRS code as part of the wider FSL software, along with providing exemplary documentation and examples.
+3. The decision to share was made early, with an understanding that transparency and accessibility are crucial for advancing healthcare research. The goals were to encourage community development and to maintain a useful archive of the research process.
+4. The authors stress the importance of making academic tools open-source and believe that sharing code and data should become a standard practice that is promoted through education, training, and changing the cultural norms within academia. They also suggest that better recognition of the contribution of shared code and data could incentivize researchers to adopt more reproducible research practices.
+
+ ---------------------------------------------------
+Paper number: 31
+Year: 2021
+Title: Integration of an RF coil and commercial field camera for ultrahigh‐field MRI
+Authors: K. Gilbert, Paul I Dubovan, J. Gati, Ravi S. Menon, C. Baron
+
+Keywords: RF Coil, Field Monitoring, Ultra-High Field MRI, Spiral Imaging
+
+Study Achievements and Reproducibility Summary:
+
+1. The study developed an RF coil with an integrated field camera capable of concurrent field monitoring during MRI scans at 7T, improving the accuracy of k-space trajectory corrections in gradient-sensitive sequences like spiral imaging.
+2. Reproducibility is achieved by sharing the design CAD files, performance data, and image reconstruction code, allowing other researchers to replicate the hardware setup and processing techniques.
+3. The authors started the project with the intention to share and maintained good practices in organizing and commenting on data and code, with consistent transparency in the research process.
+4. They believe sharing data and code accelerates scientific development and promotes accountability, especially when utilizing public research funds. They also emphasize the importance of fostering a culture of collaboration over competition and making science more accessible to advance the field of MRI.
+
+ ---------------------------------------------------
