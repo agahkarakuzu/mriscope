@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reproducibility Word Cloud &#8212; A scoping review of reproducible MRI studies</title>
+    <title>Results &#8212; A scoping review of reproducible research practices in MRI</title>
   
   
   
@@ -70,8 +70,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'word_cloud';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Refining Insights Using LLM" href="gpt_insights.html" />
-    <link rel="prev" title="The Landscape of Reproducible Neuroimaging Studies" href="literature_overview.html" />
+    <link rel="prev" title="Creating a knowledge base for a custom GPT" href="gpt_insights.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -155,8 +154,8 @@ const thebe_selector_output = ".output, .cell_output"
     
     
     
-    <img src="https://github.com/neurolibre/brand/blob/main/png/logo_preprint.png?raw=true" class="logo__image only-light" alt="A scoping review of reproducible MRI studies - Home"/>
-    <script>document.write(`<img src="https://github.com/neurolibre/brand/blob/main/png/logo_preprint.png?raw=true" class="logo__image only-dark" alt="A scoping review of reproducible MRI studies - Home"/>`);</script>
+    <img src="https://github.com/neurolibre/brand/blob/main/png/logo_preprint.png?raw=true" class="logo__image only-light" alt="A scoping review of reproducible research practices in MRI - Home"/>
+    <script>document.write(`<img src="https://github.com/neurolibre/brand/blob/main/png/logo_preprint.png?raw=true" class="logo__image only-dark" alt="A scoping review of reproducible research practices in MRI - Home"/>`);</script>
   
   
 </a></div>
@@ -166,26 +165,14 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    About
+                    Introduction
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="literature_overview.html">The Landscape of Reproducible Neuroimaging Studies</a></li>
-
-
-
-
-
-
-
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Reproducibility Word Cloud</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="gpt_insights.html">Refining Insights Using LLM</a></li>
-
-
-
-
+<li class="toctree-l1"><a class="reference internal" href="literature_overview.html">Methodology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gpt_insights.html">Creating a knowledge base for a custom GPT</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Results</a></li>
 </ul>
 
     </div>
@@ -417,7 +404,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Reproducibility Word Cloud</h1>
+    <h1>Results</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -427,10 +414,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Reproducibility Word Cloud</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#create-word-cloud">Create word cloud</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mri-systems">MRI Systems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reproducibility-tools">Reproducibility tools</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion-and-future-directions">Discussion and Future Directions</a></li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -441,9 +428,34 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="section" id="reproducibility-word-cloud">
-<h1>Reproducibility Word Cloud<a class="headerlink" href="#reproducibility-word-cloud" title="Permalink to this heading">#</a></h1>
-<div class="cell docutils container">
+  <div class="tex2jax_ignore mathjax_ignore section" id="results">
+<h1>Results<a class="headerlink" href="#results" title="Permalink to this heading">#</a></h1>
+<div class="section" id="mri-systems">
+<h2>MRI Systems<a class="headerlink" href="#mri-systems" title="Permalink to this heading">#</a></h2>
+<p>Most MRI development is done on commercial systems using proprietary hardware and software. Peeking inside the black boxes that generate the images is non-trivial, but it is essential for promoting reproducibility in MRI.</p>
+<p>Quantitative MRI articles are powerfulexcellent showcases of reproducible research practices, as they usually come with fitting models that can be shared on public code repositories. The applications range from MR spectroscopy <span id="id1">[<a class="reference internal" href="#id50" title="William T Clarke, Charlotte J Stagg, and Saad Jbabdi. FSL-MRS: an end-to-end spectroscopy analysis package. Magn. Reson. Med., 85(6):2950–2964, June 2021.">Clarke <em>et al.</em>, 2021</a>, <a class="reference internal" href="#id19" title="Layla Tabea Riemann, Christoph Stefan Aigner, Ralf Mekle, Oliver Speck, Georg Rose, Bernd Ittermann, Sebastian Schmitter, and Ariane Fillmer. Fourier-based decomposition for simultaneous 2-voxel MRS acquisition with 2SPECIAL. Magn. Reson. Med., 88(5):1978–1993, November 2022.">Riemann <em>et al.</em>, 2022</a>, <a class="reference internal" href="#id41" title="Julien Songeon, Sébastien Courvoisier, Lijing Xin, Thomas Agius, Oscar Dabrowski, Alban Longchamp, François Lazeyras, and Antoine Klauser. In vivo magnetic resonance 31 P-Spectral analysis with neural networks: 31P-SPAWNN. Magn. Reson. Med., 89(1):40–53, January 2023.">Songeon <em>et al.</em>, 2023</a>]</span> to ASL {cite:p}{Woods2022-ud}, diffusion MRI (Cai et al., 2021; Tristán-Vega et al., 2022), CEST (Huang et al., 2022), magnetization transfer (Assländer et al., 2022; Malik et al., 2020; Rowley et al., 2021), B1 mapping (Delgado et al., 2020) and relaxometry (Balbastre et al., 2022; Kapre et al., 2020; J. Lee et al., 2020; Whitaker et al., 2020).</p>
+<p>Transparent reconstruction pipelines are also prominently featured in the reproducible research insights, including real-time MRI (Zhao et al., 2021), parallel imaging (Hess et al., 2021), large-scale volumetric dynamic imaging (Ong et al., 2020), phase unwrapping (Dymerska et al., 2021), hyperpolarized MRI (Tustison et al., 2021), Dixon imaging (Rydén et al., 2020) and X-nuclei imaging (McCallister et al., 2021). Deep learning is increasingly present in the reproducibility conversation, as MRI researchers are trying to shine a light on AI-driven workflows for phase-focused applications (Cole et al., 2021), CEST (Huang et al., 2022), diffusion-weighted imaging (Barbieri et al., 2020), myelin water imaging (J. Lee et al., 2020), B1 estimation (Abbasi-Rad et al., 2021), and tissue segmentation (Estrada et al., 2020).</p>
+<p>Reproducibility of MRI hardware is still in its infancy, but a recent study integrated RF coils with commercial field cameras for ultrahigh-field MRI, exemplifying the coupling of hardware advancements with software solutions. The authors shared the design CAD files, performance data, and image reconstruction code, ensuring that hardware innovations can be reproduced and utilized by other researchers (Gilbert et al., 2022).</p>
+<p>Finally, vendor-neutral pulse sequences are putting interoperability and transparency at the center of the reproducibility landscape. Pulseq and gammaSTAR are vendor-neutral platforms enabling the creation of MRI pulse sequences that are compatible with three major MRI vendors (Layton et al., 2017); (Cordes et al., 2020). In addition, VENUS is an end-to-end vendor-neutral workflow that was shown to reduce inter-vendor variability in quantitative MRI measurements of myelin, thereby strengthening the reproducibility of quantitative MRI research and facilitating multicenter clinical trials​​ (Karakuzu et al. 2022; Karakuzu et al. 2020)(Karakuzu, Biswas, et al., 2022).</p>
+</div>
+<div class="section" id="reproducibility-tools">
+<h2>Reproducibility tools<a class="headerlink" href="#reproducibility-tools" title="Permalink to this heading">#</a></h2>
+<p>There is a growing number of studies providing access to raw imaging data, pre-processing pipelines, and post-analysis results. Repositories like Zenodo, XNAT, and the Open Science Framework (OSF) serve as vital resources for housing and curating MRI data. Data sharing is also made easier thanks to unifiedstandardized data representationsformats, such as the ISMRM raw data format (Inati et al., 2017) for standardizing k-space datarepresentations, and the Brain Imaging Data Structure (BIDS) for organizing complex datasets (Gorgolewski et al., 2016) and their derivatives (Karakuzu, Appelhoff, et al., 2022).
+Software repositories such as Github and Gitlab are making it easier to centralize processing routines and to adopt version control, unit tests and other robust software development practices. The introduction of tools for automated QA processes, as seen in the development of platforms like PreQual for DWI analysis (Cai et al., 2021), signifies an emphasis on interoperability and standardization.</p>
+<p>The increasing adoption of containerization and virtual environments makes workflows transparent and easy to execute. Tools like Docker and Singularity are used to package computing environments, making them portableshippable and reproducible across different systems. Studies employing these tools enable MRI researchers to replicate computational processing pipelines without dealing with dependency issues in local computational environments (Cordes et al., 2020; Estrada et al., 2020; Karakuzu, Biswas, et al., 2022).</p>
+<p>The rise of machine learning and artificial intelligence in MRI necessitates rigorous evaluation to ensure reproducibility. Studies that use deep learning are beginning to supplement their methodological descriptions with the open-source code, trained models, and simulation tools that underpin their algorithms. Algorithms such aslike DeepCEST, developed for B1 inhomogeneity correction at 7T, showcase how clinical research can be improved by reproducible research practices (Huang et al., 2022). Sharing these algorithms allows others to perform direct comparisons and apply them to new datasets.</p>
+<p>Finally, pulse-sequence and hardware descriptions are slowly entering the public domain (Cordes et al., 2020; Gilbert et al., 2022; Karakuzu, Biswas, et al., 2022; Layton et al., 2017). For a long time MRI vendors have been reluctant to open up their systems (Stikov &amp; Karakuzu, 2023), but standardized phantoms (Stupic et al., 2021) are creating benchmarks that require transparency and reproducibility. This is particularly relevant for quantitative MRI applications, where scanner upgrades and variabilities across sites are a major hurdle to wider clinical adoption (Boudreau et al., 2023; Keenan et al., 2019; Y. Lee et al., 2019).</p>
+<p>Reproducibility is also bolstered by interactive documentation and tools such as Jupyter Notebooks, allowing for dynamic presentation and hands-on engagement with data and methods. Platforms incorporating such interactive elements are being utilized with greater frequency, providing real-time demonstration of analysis techniques and enabling peer-led validation. Resources such as MRHub, MRPub,  and Open Source Imaging and NeuroLibre (Karakuzu et al. 2022) serve as a gateway to a wide range of tools and tutorials that promote reproducibility in MRI.</p>
+</div>
+<div class="section" id="discussion-and-future-directions">
+<h2>Discussion and Future Directions<a class="headerlink" href="#discussion-and-future-directions" title="Permalink to this heading">#</a></h2>
+<p>The progress towards reproducibility in neuroimaging research points to a distinct cultural shift in the scientific community. The move towards open-access publishing, code-sharing platforms, and data repositories reflects a concerted effort to uphold the reproducibility of complex imaging studies. Adopting containerization technologies, pushing for standardization, and consistently focusing on quality assurance are key drivers that will continue to improve reproducibility standards in MRI research. Figure 2 is a word cloud generated from the articles included in this scoping review, highlighting the concepts and vocabulary that is driving reproducibility in MRI.</p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># REQUIRED CODE CELL</span>
 <span class="kn">import</span> <span class="nn">os</span> 
@@ -489,12 +501,14 @@ document.write(`
 </pre></div>
 </div>
 </div>
+</details>
 </div>
-</div>
-<div class="section" id="create-word-cloud">
-<h1>Create word cloud<a class="headerlink" href="#create-word-cloud" title="Permalink to this heading">#</a></h1>
-<p>Based on <a class="reference external" href="https://github.com/amueller/word_cloud/blob/main/examples/parrot.py">this example</a>.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">directory_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">DATA_ROOT</span><span class="p">,</span><span class="s2">&quot;repro_insights_parsed_nov23&quot;</span><span class="p">)</span>
 <span class="n">input_files</span> <span class="o">=</span> <span class="p">[</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directory_path</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">directory_path</span><span class="p">)</span> <span class="k">if</span> <span class="n">f</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.txt&#39;</span><span class="p">)]</span>
@@ -520,8 +534,14 @@ document.write(`
 </pre></div>
 </div>
 </div>
+</details>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="n">all_text</span>
 
@@ -566,12 +586,62 @@ document.write(`
 </pre></div>
 </div>
 </div>
+</details>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;wordcloud.wordcloud.WordCloud at 0x7f8f23b3ad00&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;wordcloud.wordcloud.WordCloud at 0x7fc344a0cc70&gt;
 </pre></div>
 </div>
 <img alt="_images/bca51d8555a45f8aa5d3db5440f94f40859f69a99825962b6fa34b0dfc89c146.png" src="_images/bca51d8555a45f8aa5d3db5440f94f40859f69a99825962b6fa34b0dfc89c146.png" />
 <img alt="_images/52d2a4443767c7981f3005f0ae55addd1b459a402e003438c829379084dc7234.png" src="_images/52d2a4443767c7981f3005f0ae55addd1b459a402e003438c829379084dc7234.png" />
+</div>
+</div>
+<div class="admonition-reference-documentation admonition">
+<p class="admonition-title">Reference documentation</p>
+<p>Please see <a class="reference external" href="https://github.com/amueller/word_cloud/blob/main/examples/parrot.py">this example</a> as the reference implementation.</p>
+</div>
+<p>As can be seen from the figure, the components of reproducibility in MRI research are multifaceted, integrating not just data and code, but also the analytical pipelines and hardware configurations. The shift towards comprehensive sharing is motivated both by a scientific ethic of transparency and the practical need for rigorous validation of complex methodologies (Boudreau et al., 2021, 2022).</p>
+<p>However, this shift is not without challenges (Niso et al. 2022). Variations in data acquisition and analysis methodologies limit cross-study comparisons. Sensitivity to software and hardware versions can impede direct reproducibility. Privacy concerns and data protection regulations can be barriers to data sharing, particularly with clinical images.</p>
+<p>While challenges persist, steps are taken by individual researchers and institutions to prioritize reproducibility. Moving forward, the MRI community should work collectively to overcome barriers, institutionalize reproducible practices, and constructively address data sharing concerns to further the discipline’s progress.</p>
+<p>The initiatives and tools identified in this review serve as a blueprint for future studies to replicate successful practices, safeguard against bias, and accelerate neuroscientific discovery. As MRI research continues to advance, upholding the principles of reproducibility will be essential to maintaining the integrity and translational potential of its findings.</p>
+<div class="docutils container" id="id2">
+<dl class="citation">
+<dt class="label" id="id24"><span class="brackets">1</span></dt>
+<dd><p>Azeez Adebimpe, Maxwell Bertolero, Sudipto Dolui, Matthew Cieslak, Kristin Murtha, Erica B Baller, Bradley Boeve, Adam Boxer, Ellyn R Butler, Phil Cook, Stan Colcombe, Sydney Covitz, Christos Davatzikos, Diego G Davila, Mark A Elliott, Matthew W Flounders, Alexandre R Franco, Raquel E Gur, Ruben C Gur, Basma Jaber, Corey McMillian, ALLFTD Consortium, Michael Milham, Henk J M M Mutsaerts, Desmond J Oathes, Christopher A Olm, Jeffrey S Phillips, Will Tackett, David R Roalf, Howard Rosen, Tinashe M Tapera, M Dylan Tisdall, Dale Zhou, Oscar Esteban, Russell A Poldrack, John A Detre, and Theodore D Satterthwaite. ASLPrep: a platform for processing of arterial spin labeled MRI and quantification of regional brain perfusion. <em>Nat. Methods</em>, 19(6):683–686, June 2022.</p>
+</dd>
+<dt class="label" id="id55"><span class="brackets">2</span></dt>
+<dd><p>Hilary Arksey and Lisa O'Malley. Scoping studies: towards a methodological framework. <em>Int. J. Soc. Res. Methodol.</em>, 8(1):19–32, February 2005.</p>
+</dd>
+<dt class="label" id="id50"><span class="brackets"><a class="fn-backref" href="#id1">3</a></span></dt>
+<dd><p>William T Clarke, Charlotte J Stagg, and Saad Jbabdi. FSL-MRS: an end-to-end spectroscopy analysis package. <em>Magn. Reson. Med.</em>, 85(6):2950–2964, June 2021.</p>
+</dd>
+<dt class="label" id="id10"><span class="brackets">4</span></dt>
+<dd><p><strong>missing journal in Cohan2020-tw</strong></p>
+</dd>
+<dt class="label" id="id35"><span class="brackets">5</span></dt>
+<dd><p>Suzanne Fricke. Semantic scholar. <em>J. Med. Libr. Assoc.</em>, 106(1):145, January 2018.</p>
+</dd>
+<dt class="label" id="id37"><span class="brackets">6</span></dt>
+<dd><p>Danielle Levac, Heather Colquhoun, and Kelly K O'Brien. Scoping studies: advancing the methodology. <em>Implement. Sci.</em>, 5:69, September 2010.</p>
+</dd>
+<dt class="label" id="id52"><span class="brackets">7</span></dt>
+<dd><p><strong>missing journal in McInnes2018-sc</strong></p>
+</dd>
+<dt class="label" id="id22"><span class="brackets">8</span></dt>
+<dd><p>Micah D J Peters, Christina M Godfrey, Hanan Khalil, Patricia McInerney, Deborah Parker, and Cassia Baldini Soares. Guidance for conducting systematic scoping reviews. <em>Int. J. Evid. Based Healthc.</em>, 13(3):141–146, September 2015.</p>
+</dd>
+<dt class="label" id="id19"><span class="brackets"><a class="fn-backref" href="#id1">9</a></span></dt>
+<dd><p>Layla Tabea Riemann, Christoph Stefan Aigner, Ralf Mekle, Oliver Speck, Georg Rose, Bernd Ittermann, Sebastian Schmitter, and Ariane Fillmer. Fourier-based decomposition for simultaneous 2-voxel MRS acquisition with 2SPECIAL. <em>Magn. Reson. Med.</em>, 88(5):1978–1993, November 2022.</p>
+</dd>
+<dt class="label" id="id41"><span class="brackets"><a class="fn-backref" href="#id1">10</a></span></dt>
+<dd><p>Julien Songeon, Sébastien Courvoisier, Lijing Xin, Thomas Agius, Oscar Dabrowski, Alban Longchamp, François Lazeyras, and Antoine Klauser. In vivo magnetic resonance 31 P-Spectral analysis with neural networks: 31P-SPAWNN. <em>Magn. Reson. Med.</em>, 89(1):40–53, January 2023.</p>
+</dd>
+<dt class="label" id="id43"><span class="brackets">11</span></dt>
+<dd><p>Nikola Stikov, Joshua D Trzasko, and Matt A Bernstein. Reproducibility and the future of MRI research. <em>Magn. Reson. Med.</em>, 82(6):1981–1983, December 2019.</p>
+</dd>
+<dt class="label" id="id45"><span class="brackets">12</span></dt>
+<dd><p>B Tilea, C Alberti, C Adamsbaum, P Armoogum, J F Oury, D Cabrol, G Sebag, G Kalifa, and C Garel. Cerebral biometry in fetal magnetic resonance imaging: new reference data. <em>Ultrasound Obstet. Gynecol.</em>, 33(2):173–181, February 2009.</p>
+</dd>
+</dl>
 </div>
 </div>
 </div>
@@ -607,22 +677,13 @@ document.write(`
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="literature_overview.html"
+       href="gpt_insights.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">The Landscape of Reproducible Neuroimaging Studies</p>
+        <p class="prev-next-title">Creating a knowledge base for a custom GPT</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="gpt_insights.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Refining Insights Using LLM</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -639,10 +700,10 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Reproducibility Word Cloud</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#create-word-cloud">Create word cloud</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mri-systems">MRI Systems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reproducibility-tools">Reproducibility tools</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion-and-future-directions">Discussion and Future Directions</a></li>
 </ul>
-
   </nav></div>
 
 </div></div>

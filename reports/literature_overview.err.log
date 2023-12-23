@@ -15,104 +15,14 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-# Create Plotly figure
-fig = go.Figure()
-
-# Scatter plot for UMAP in 2D
-scatter_2d = go.Scatter(
-    x=umap_2d[:, 0],
-    y=umap_2d[:, 1],
-    mode='markers',
-    marker = dict(color =["#562135" if item == 'Highlights' else "#f8aabe" for item in papers_data['is_mrmh']],
-                                          size=9, 
-                                          line= dict(color="#ff8080",width=1),
-                                          opacity=0.9),
-    customdata= [f"<b>{dat['title']}</b> <br>{dat['venue']} <br>Cited by: {dat['n_citation']} <br>{dat['year']}" for dat in papers_data_dict],
-    hovertemplate='%{customdata}',
-    visible = True,
-    name='2D'
-)
-fig.add_trace(scatter_2d)
-
-# Add dropdown
-fig.update_layout(
-    updatemenus=[
-        dict(
-            type = "buttons",
-            direction = "left",
-            buttons=list([
-                dict(
-                    args=[{"showscale":True,"marker": dict(color =["#562135" if item == 'Highlights' else "#f8aabe" for item in papers_data['is_mrmh']],
-                                          size=9, 
-                                          line= dict(color="#ff8080",width=1),
-                                          opacity=0.9)}],
-                    label="Highlights",
-                    method="restyle"
-                ),
-                dict(
-                    args=[{"marker": dict(color = np.log(papers_data['n_citation']),colorscale='Plotly3',size=9, colorbar=dict(thickness=10,title = "Citation (log)",tickvals= [0,max(papers_data['n_citation'])]))}],
-                    label="Citation",
-                    method="restyle"
-                ),
-                dict(
-                    args=[{"marker": dict(color = papers_data['year'],colorscale='Viridis',size=9,colorbar=dict(thickness=10, title="Year"))}],
-                    label="Year",
-                    method="restyle"
-                )
-            ]),
-            pad={"r": 10, "t": 10},
-            showactive=True,
-            x=0.11,
-            xanchor="left",
-            y=0.98,
-            yanchor="top"
-        ),
-    ]
-)
-
-plotly_logo = base64.b64encode(open(os.path.join(DATA_ROOT,'sakurabg.png'), 'rb').read())
-
-fig.update_layout(plot_bgcolor='white',
-                    images= [dict(
-                    source='data:image/png;base64,{}'.format(plotly_logo.decode()),
-                    xref="paper", yref="paper",
-                    x=0.033,
-                    y=0.956,
-                    sizex=0.943, sizey=1,
-                    xanchor="left",
-                    yanchor="top",
-                    #sizing="stretch",
-                    layer="below")])
-
-fig.update_layout(yaxis={'visible': False, 'showticklabels': False})
-fig.update_layout(xaxis={'visible': False, 'showticklabels': False})
-
-# Update layout
-fig.update_layout(title='Sentient Array of Knowledge Unraveling and Assessment (SAKURA)',
-                 height = 900,
-                 width = 936,
-                hovermode='closest')
-
-plot(fig, filename = 'sakura.html', config = config)
-display(HTML('sakura.html'))
+```{bibliography}
+```
 ------------------
 
------ stderr -----
-/var/folders/wf/n68nr3yx7pb2yldhq8nrfmzr0000gn/T/ipykernel_45550/2298348152.py:36: RuntimeWarning:
 
-divide by zero encountered in log
-------------------
+[0;36m  Cell [0;32mIn[10], line 1[0;36m[0m
+[0;31m    ```{bibliography}[0m
+[0m    ^[0m
+[0;31mSyntaxError[0m[0;31m:[0m invalid syntax
 
-[0;31m---------------------------------------------------------------------------[0m
-[0;31mNameError[0m                                 Traceback (most recent call last)
-Cell [0;32mIn[8], line 79[0m
-[1;32m     73[0m [38;5;66;03m# Update layout[39;00m
-[1;32m     74[0m fig[38;5;241m.[39mupdate_layout(title[38;5;241m=[39m[38;5;124m'[39m[38;5;124mSentient Array of Knowledge Unraveling and Assessment (SAKURA)[39m[38;5;124m'[39m,
-[1;32m     75[0m                  height [38;5;241m=[39m [38;5;241m900[39m,
-[1;32m     76[0m                  width [38;5;241m=[39m [38;5;241m936[39m,
-[1;32m     77[0m                 hovermode[38;5;241m=[39m[38;5;124m'[39m[38;5;124mclosest[39m[38;5;124m'[39m)
-[0;32m---> 79[0m plot(fig, filename [38;5;241m=[39m [38;5;124m'[39m[38;5;124msakura.html[39m[38;5;124m'[39m, config [38;5;241m=[39m [43mconfig[49m)
-[1;32m     80[0m display(HTML([38;5;124m'[39m[38;5;124msakura.html[39m[38;5;124m'[39m))
-
-[0;31mNameError[0m: name 'config' is not defined
 

@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About &#8212; A scoping review of reproducible MRI studies</title>
+    <title>Introduction &#8212; A scoping review of reproducible research practices in MRI</title>
   
   
   
@@ -70,7 +70,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="The Landscape of Reproducible Neuroimaging Studies" href="literature_overview.html" />
+    <link rel="next" title="Methodology" href="literature_overview.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -154,8 +154,8 @@ const thebe_selector_output = ".output, .cell_output"
     
     
     
-    <img src="https://github.com/neurolibre/brand/blob/main/png/logo_preprint.png?raw=true" class="logo__image only-light" alt="A scoping review of reproducible MRI studies - Home"/>
-    <script>document.write(`<img src="https://github.com/neurolibre/brand/blob/main/png/logo_preprint.png?raw=true" class="logo__image only-dark" alt="A scoping review of reproducible MRI studies - Home"/>`);</script>
+    <img src="https://github.com/neurolibre/brand/blob/main/png/logo_preprint.png?raw=true" class="logo__image only-light" alt="A scoping review of reproducible research practices in MRI - Home"/>
+    <script>document.write(`<img src="https://github.com/neurolibre/brand/blob/main/png/logo_preprint.png?raw=true" class="logo__image only-dark" alt="A scoping review of reproducible research practices in MRI - Home"/>`);</script>
   
   
 </a></div>
@@ -165,26 +165,14 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1 current active">
                 <a class="reference internal" href="#">
-                    About
+                    Introduction
                 </a>
             </li>
         </ul>
         <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="literature_overview.html">The Landscape of Reproducible Neuroimaging Studies</a></li>
-
-
-
-
-
-
-
-<li class="toctree-l1"><a class="reference internal" href="word_cloud.html">Reproducibility Word Cloud</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="gpt_insights.html">Refining Insights Using LLM</a></li>
-
-
-
-
+<li class="toctree-l1"><a class="reference internal" href="literature_overview.html">Methodology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gpt_insights.html">Creating a knowledge base for a custom GPT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="word_cloud.html">Results</a></li>
 </ul>
 
     </div>
@@ -383,7 +371,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>About</h1>
+    <h1>Introduction</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -397,9 +385,51 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="about">
-<h1>About<a class="headerlink" href="#about" title="Permalink to this heading">#</a></h1>
-<p>The field of neuroimaging has progressed significantly with the introduction of advanced computational methods and high-resolution imaging techniques, bringing to the fore questions about the reproducibility of research findings. Reproducibility is essential for validating results, consolidating knowledge, and fostering scientific advancements. This review synthesizes insights from 31 recent neuroimaging articles to examine the current state of reproducibility within the field, highlighting key practices and challenges.</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h1>
+<p>Reproducibility is a cornerstone of scientific inquiry, particularly relevant for data-intensive and computationally demanding fields of research, such as magnetic resonance imaging (MRI) <span id="id1">[<a class="reference internal" href="word_cloud.html#id43" title="Nikola Stikov, Joshua D Trzasko, and Matt A Bernstein. Reproducibility and the future of MRI research. Magn. Reson. Med., 82(6):1981–1983, December 2019.">Stikov <em>et al.</em>, 2019</a>]</span>. Ensuring reproducibility thus poses a unique set of challenges and necessitates the diligent application of methods that foster transparency, verification, and interoperability of research findings.</p>
+<p>While numerous articles have addressed the reproducibility of clinical MRI studies, few have looked at the reproducibility of the MRI methodology underpinning these studies. This is understandable given that the MRI development community is smaller, driven by engineers and physicists, with modest representation from clinicians and statisticians. In addition, given the heterogeneity of study designs and the wide range of MRI development subfields, performing a meta-analysis or a systematic review of these studies from a reproducibility standpoint is challenging. In light of these considerations, a scoping review emerges as a suitable framework for exploring the reproducibility of MRI methodology.</p>
+<p>A scoping review aims to comprehensively map the landscape of existing research, acknowledging and accommodating the diversity in approaches and perspectives within the field <span id="id2">[<a class="reference internal" href="word_cloud.html#id55" title="Hilary Arksey and Lisa O'Malley. Scoping studies: towards a methodological framework. Int. J. Soc. Res. Methodol., 8(1):19–32, February 2005.">Arksey and O'Malley, 2005</a>, <a class="reference internal" href="word_cloud.html#id37" title="Danielle Levac, Heather Colquhoun, and Kelly K O'Brien. Scoping studies: advancing the methodology. Implement. Sci., 5:69, September 2010.">Levac <em>et al.</em>, 2010</a>, <a class="reference internal" href="word_cloud.html#id22" title="Micah D J Peters, Christina M Godfrey, Hanan Khalil, Patricia McInerney, Deborah Parker, and Cassia Baldini Soares. Guidance for conducting systematic scoping reviews. Int. J. Evid. Based Healthc., 13(3):141–146, September 2015.">Peters <em>et al.</em>, 2015</a>]</span>. This method allows capturing the breadth of methodologies, exploring various analytical techniques, and identifying commonalities and discrepancies across studies. In this scoping reviewBy undertaking a scoping review, we aim to examine the current landscape of reproducible research practices across various MRI studies, drawing attention to common strategies, tools, and repositories used to achieve reproducible outcomes.</p>
+<div class="docutils container" id="id3">
+<dl class="citation">
+<dt class="label" id="id25"><span class="brackets">1</span></dt>
+<dd><p>Azeez Adebimpe, Maxwell Bertolero, Sudipto Dolui, Matthew Cieslak, Kristin Murtha, Erica B Baller, Bradley Boeve, Adam Boxer, Ellyn R Butler, Phil Cook, Stan Colcombe, Sydney Covitz, Christos Davatzikos, Diego G Davila, Mark A Elliott, Matthew W Flounders, Alexandre R Franco, Raquel E Gur, Ruben C Gur, Basma Jaber, Corey McMillian, ALLFTD Consortium, Michael Milham, Henk J M M Mutsaerts, Desmond J Oathes, Christopher A Olm, Jeffrey S Phillips, Will Tackett, David R Roalf, Howard Rosen, Tinashe M Tapera, M Dylan Tisdall, Dale Zhou, Oscar Esteban, Russell A Poldrack, John A Detre, and Theodore D Satterthwaite. ASLPrep: a platform for processing of arterial spin labeled MRI and quantification of regional brain perfusion. <em>Nat. Methods</em>, 19(6):683–686, June 2022.</p>
+</dd>
+<dt class="label" id="id56"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p>Hilary Arksey and Lisa O'Malley. Scoping studies: towards a methodological framework. <em>Int. J. Soc. Res. Methodol.</em>, 8(1):19–32, February 2005.</p>
+</dd>
+<dt class="label" id="id51"><span class="brackets">3</span></dt>
+<dd><p>William T Clarke, Charlotte J Stagg, and Saad Jbabdi. FSL-MRS: an end-to-end spectroscopy analysis package. <em>Magn. Reson. Med.</em>, 85(6):2950–2964, June 2021.</p>
+</dd>
+<dt class="label" id="id11"><span class="brackets">4</span></dt>
+<dd><p><strong>missing journal in Cohan2020-tw</strong></p>
+</dd>
+<dt class="label" id="id36"><span class="brackets">5</span></dt>
+<dd><p>Suzanne Fricke. Semantic scholar. <em>J. Med. Libr. Assoc.</em>, 106(1):145, January 2018.</p>
+</dd>
+<dt class="label" id="id38"><span class="brackets"><a class="fn-backref" href="#id2">6</a></span></dt>
+<dd><p>Danielle Levac, Heather Colquhoun, and Kelly K O'Brien. Scoping studies: advancing the methodology. <em>Implement. Sci.</em>, 5:69, September 2010.</p>
+</dd>
+<dt class="label" id="id53"><span class="brackets">7</span></dt>
+<dd><p><strong>missing journal in McInnes2018-sc</strong></p>
+</dd>
+<dt class="label" id="id23"><span class="brackets"><a class="fn-backref" href="#id2">8</a></span></dt>
+<dd><p>Micah D J Peters, Christina M Godfrey, Hanan Khalil, Patricia McInerney, Deborah Parker, and Cassia Baldini Soares. Guidance for conducting systematic scoping reviews. <em>Int. J. Evid. Based Healthc.</em>, 13(3):141–146, September 2015.</p>
+</dd>
+<dt class="label" id="id20"><span class="brackets">9</span></dt>
+<dd><p>Layla Tabea Riemann, Christoph Stefan Aigner, Ralf Mekle, Oliver Speck, Georg Rose, Bernd Ittermann, Sebastian Schmitter, and Ariane Fillmer. Fourier-based decomposition for simultaneous 2-voxel MRS acquisition with 2SPECIAL. <em>Magn. Reson. Med.</em>, 88(5):1978–1993, November 2022.</p>
+</dd>
+<dt class="label" id="id42"><span class="brackets">10</span></dt>
+<dd><p>Julien Songeon, Sébastien Courvoisier, Lijing Xin, Thomas Agius, Oscar Dabrowski, Alban Longchamp, François Lazeyras, and Antoine Klauser. In vivo magnetic resonance 31 P-Spectral analysis with neural networks: 31P-SPAWNN. <em>Magn. Reson. Med.</em>, 89(1):40–53, January 2023.</p>
+</dd>
+<dt class="label" id="id44"><span class="brackets"><a class="fn-backref" href="#id1">11</a></span></dt>
+<dd><p>Nikola Stikov, Joshua D Trzasko, and Matt A Bernstein. Reproducibility and the future of MRI research. <em>Magn. Reson. Med.</em>, 82(6):1981–1983, December 2019.</p>
+</dd>
+<dt class="label" id="id46"><span class="brackets">12</span></dt>
+<dd><p>B Tilea, C Alberti, C Adamsbaum, P Armoogum, J F Oury, D Cabrol, G Sebag, G Kalifa, and C Garel. Cerebral biometry in fetal magnetic resonance imaging: new reference data. <em>Ultrasound Obstet. Gynecol.</em>, 33(2):173–181, February 2009.</p>
+</dd>
+</dl>
+</div>
 <div class="toctree-wrapper compound">
 </div>
 </div>
@@ -439,7 +469,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">The Landscape of Reproducible Neuroimaging Studies</p>
+        <p class="prev-next-title">Methodology</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
