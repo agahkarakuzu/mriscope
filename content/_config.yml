@@ -27,6 +27,7 @@ launch_buttons:
 repository:
   url                       : https://github.com/agahkarakuzu/mriscope
   path_to_book              : content/
+  branch                    : main
 
 
 parse:
