@@ -1,0 +1,54 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  title: 'Reproducible research practices in magnetic resonance neuroimaging'
+  subtitle: A review informed by advanced language models
+  thumbnail: banner.jpg
+  thebe:
+    binder:
+      url: https://test.conp.cloud
+      repo: agahkarakuzu/mriscope
+      ref: HEAD
+  authors:
+    - name: Agah Karakuzu
+      orcid: 0000-0001-7283-271X
+      affiliations:
+        - NeuroPoly, Polytechnique Montreal, Quebec, Canada
+        - Montreal Heart Institute, Montreal, Quebec, Canada
+    - name: Mathieu Boudreau
+      orcid: 0000-0002-7726-4456
+      affiliations:
+        - NeuroPoly, Polytechnique Montreal, Quebec, Canada
+    - name: Nikola Stikov
+      orcid: 0000-0002-8480-5230
+      affiliations:
+        - NeuroPoly, Polytechnique Montreal, Quebec, Canada
+        - Montreal Heart Institute, Montreal, Quebec, Canada
+        - Center for Advanced Interdisciplinary Research, Ss. Cyril and Methodius University, Skopje, North Macedonia
+  keywords:
+    - quantitative MRI
+    - reproducibility
+    - vendor-neutral
+  github: https://github.com/agahkarakuzu/mriscope
+  banner: banner.jpg
+  venue: Neurolibre
+  subject: Living Preprint
+  numbering:
+    headings: true
+  doi: 10.55458/neurolibre.00021
+  open_access: true
+  license: CC-BY-4.0
+  abbreviations:
+    MRI: Magnetic resonance imaging
+    qMRI: quantitative magnetic resonance imaging
+    GPT: Generative Pre-trained Transformer
+    MRM: Magnetic Resonance in Medicine
+    UMAP: Uniform manifold approximation and projection
+  bibliography:
+    - paper.bib
+  resources:
+    - content/literature_overview.ipynb
+    - content/gpt_insights.ipynb
+    - content/word_cloud.ipynb
+site:
+  template: article-theme

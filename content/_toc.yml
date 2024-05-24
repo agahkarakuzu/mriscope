@@ -1,6 +1,0 @@
-format: jb-book
-root: intro.md
-chapters:
-- file: literature_overview
-- file: gpt_insights
-- file: word_cloud

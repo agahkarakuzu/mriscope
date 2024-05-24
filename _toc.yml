@@ -1,0 +1,6 @@
+format: jb-book
+root: content/intro.md
+chapters:
+  - file: content/literature_overview.ipynb
+  - file: content/gpt_insights.ipynb
+  - file: content/word_cloud.ipynb
