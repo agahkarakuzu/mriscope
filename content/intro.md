@@ -111,15 +111,13 @@ Through its advanced natural language processing capabilities, RRInsights can ef
 Automated interaction with GPT4, iterating over all (31) seleted records
 :::
 
-::::{seealso} Click here to see the static version of the SAKURA plot
-:class: dropdown
+
 :::{figure} gpt_interaction.jpg
 :label: fig3
 :width: 90%
 :align: center
 An example user interaction with the RRInsights custom GPT. The model is capable of fetching the studies concerned with the requested content (i.e., vendor-neutral solutions and provide summaries highlighting thematic similarities between them, particularly focusing on reproducibility aspects.
 :::
-::::
 
 [](#fig3) presents an example interaction with RRInsights to create a summary about the vendor-neutral solutions found in the knowledge base. The model's response to this inquiry demonstrates that RRInsights is context-aware, adept at pinpointing relevant information in the knowledge base, and offering interpretations within the framework of reproducibility. 
 
