@@ -1,3 +1,28 @@
+---
+title: Reproducible research practices in magnetic resonance neuroimaging
+subtitle: A review informed by advanced language models
+banner: ../banner.jpg
+venue: Neurolibre
+subject: Living Preprint
+date: 2024-07-25
+authors:
+ - name: Agah Karakuzu
+   affiliations:
+     - NeuroPoly, Polytechnique Montreal, Quebec, Canada
+     - Montreal Heart Institute, Montreal, Quebec, Canada
+ - name: Mathieu Boudreau
+   affiliations:
+     - NeuroPoly, Polytechnique Montreal, Quebec, Canada
+ - name: Nikola Stikov
+   affiliations: 
+     - NeuroPoly, Polytechnique Montreal, Quebec, Canada
+     - Montreal Heart Institute, Montreal, Quebec, Canada
+     - Center for Advanced Interdisciplinary Research, Ss. Cyril and Methodius University, Skopje, North Macedonia  
+numbering:
+  heading_2: false
+  figure:
+    template: Fig. %s
+---
 
 +++ { "part": "abstract" }
 
