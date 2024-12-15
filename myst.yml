@@ -6,29 +6,61 @@ project:
   thumbnail: banner.jpg
   thebe:
     binder:
-      url: https://test.conp.cloud
+      url: https://binder-preview.conp.cloud
       repo: agahkarakuzu/mriscope
       ref: HEAD
   authors:
     - name: Agah Karakuzu
       orcid: 0000-0001-7283-271X
-      affiliations:
-        - NeuroPoly, Polytechnique Montreal, Quebec, Canada
-        - Montreal Heart Institute, Montreal, Quebec, Canada
+      github: agahkarakuzu
+      email: agah.karakuzu@polymtl.ca
+      github: agahkarakuzu
+      twitter: agahkarakuzu
+      affiliations: polymtl; mhi
+      corresponding: true
     - name: Mathieu Boudreau
       orcid: 0000-0002-7726-4456
-      affiliations:
-        - NeuroPoly, Polytechnique Montreal, Quebec, Canada
+      affiliations: polymtl;
+      github: mathieuboudreau
+      twitter: _mattboud
     - name: Nikola Stikov
       orcid: 0000-0002-8480-5230
-      affiliations:
-        - NeuroPoly, Polytechnique Montreal, Quebec, Canada
-        - Montreal Heart Institute, Montreal, Quebec, Canada
-        - Center for Advanced Interdisciplinary Research, Ss. Cyril and Methodius University, Skopje, North Macedonia
+      twitter: stikov
+      affiliations: polymtl; mhi; macedonia
+  affiliations:
+    - id: polymtl
+      institution: NeuroPoly Lab, Polytechnique Montreal
+      ror: https://ror.org/05f8d4e86
+      isni: 0000 0004 0435 3292
+      department: Electrical Engineering
+      address: 2500 Chem. de Polytechnique
+      city: Montreal
+      region: Quebec
+      country: Canada
+      postal_code: H3T 1J4
+      phone: 1 (514) 340-4711
+    - id: mhi
+      institution: Montreal Heart Institute
+      ror: https://ror.org/03vs03g62
+      isni: 0000 0000 8995 9090
+      address: 5000 Rue Belanger
+      city: Montreal
+      region: Quebec
+      country: Canada
+      postal_code: H1T 1C8
+    - id: macedonia
+      name: Center for Advanced Interdisciplinary Research, University Ss Cyril and Methodius in Skopje
+      ror: https://ror.org/02wk2vx54
+      isni: 0000 0001 0708 5391
+      address:  Boulevard Goce Delchev 9
+      city: Skopje
+      country: North Macedonia
+      postal_code: 1000
   keywords:
     - quantitative MRI
     - reproducibility
     - vendor-neutral
+    - standardization
   github: https://github.com/agahkarakuzu/mriscope
   banner: banner.jpg
   venue: Neurolibre
