@@ -52,7 +52,7 @@ In distilling reproducibility insights powered by GPT, this review centered on 3
 
 We performed a literature search to identify where these studies fall in the broader literature of reproducible neuroimaging. To retrieve articles dedicated to reproducibility in MRI, we utilized the Semantics Scholar API [Fricke2018-ol] with the following query terms on November 23, 2023: 
 
-* `(code | data | open-source | github | jupyter ) & ((MRI & brain) | (MRI neuroimaging)) & reproducib~`.
+`(code | data | open-source | github | jupyter ) & ((MRI & brain) | (MRI neuroimaging)) & reproducib~`.
 
 Among `1098` articles included in the Semantic Scholar records, SPECTER vector embeddings [@Cohan2020-tw] were available for `612` articles, representing the semantics of publicly accessible content in abstracts and titles. For these articles, the high-dimensional semantic information captured by the word embeddings was visualized using UMAP {cite:p}`McInnes2018-sc` \autoref{fig1stat}. This visualization allowed the inspection of the semantic clustering of the articles, facilitating a deeper understanding of their contextual placement within the reproducibility landscape. In addition, the following diagram illustrates the hierarchical clustering of the selected studies in the broader literature:
 
