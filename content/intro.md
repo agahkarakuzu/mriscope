@@ -55,14 +55,13 @@ In distilling reproducibility insights powered by GPT, this review centered on 3
 
 We performed a literature search to identify where these studies fall in the broader literature of reproducible neuroimaging. To retrieve articles dedicated to reproducibility in MRI, we utilized the Semantics Scholar API [Fricke2018-ol] with the following query terms on November 23, 2023: 
 
-```{code}
+```{code} bash
 (code | data | open-source | github | jupyter ) & ((MRI & brain) | (MRI neuroimaging)) & reproducib~.
 ```
 
 Among `1098` articles included in the Semantic Scholar records, SPECTER vector embeddings [@Cohan2020-tw] were available for `612` articles, representing the semantics of publicly accessible content in abstracts and titles. For these articles, the high-dimensional semantic information captured by the word embeddings was visualized using UMAP {cite:p}`McInnes2018-sc` [](#fig1stat). This visualization allowed the inspection of the semantic clustering of the articles, facilitating a deeper understanding of their contextual placement within the reproducibility landscape. In addition, the following diagram illustrates the hierarchical clustering of the selected studies in the broader literature:
 
 ```{mermaid}
-:align: center
 flowchart LR
   subgraph Data collection
   A[/Query terms/] --> B
@@ -80,7 +79,6 @@ flowchart LR
 We created a custom GPT model, designed specifically to assist in the analysis and synthesis of information pertaining to the `31` reproducible research insights. The knowledge base of this retrieval-augmented generation framework incorporates GPT-4 summaries of the abstracts from `31` MRM articles, merged with their respective MRM Highlights interviews, as well as the titles and keywords associated with each article (refer to Appendix A). This compilation was assembled via API calls to OpenAI on November 23, 2023, using the `gpt-4-1106-preview` model.
 
 ```{mermaid}
-:align: center
 flowchart LR
   A>MRM Highlights Interviews] --> C
   B>Respective MRM Articles]--> C
@@ -111,10 +109,14 @@ The MRI systems cluster was predominantly composed of articles published in MRM,
 :::
 ::::
 
-:::{figure} #fig1-cell
+::::{figure} #fig1-cell
 :label: fig1
 Edge-bundled connectivity of the 612 articles identified by the literature search. A notable cluster is formed by most of the MRM articles that were featured in the reproducible research insights (purple nodes), particularly in the development of MRI systems. Few other selected articles fell at the intersection of MRI systems, deep learning, and workflows. Notable clusters for other studies (pink) are annotated by gray circles.
+
+:::{note}
+The scaling between the edge bundled connectivity (2D in the background) and the UMAP (scatter plot in the foreground) may not be preserved during the conversion to the html format. When done properly, it should appear as the static version of the figure.
 :::
+::::
 
 
 ::::{seealso} Click here to see 3D UMAP scatter
@@ -159,13 +161,13 @@ The following sub-sections are written based on the interactions with RRInsights
 
 Most MRI development is done on commercial systems using proprietary hardware and software. Peeking inside the black boxes that generate the images is non-trivial, but it is essential for promoting reproducibility in MRI.
 
-Quantitative MRI articles are powerful showcases of reproducible research practices, as they usually come with fitting models that can be shared on public code repositories. The applications range from MR spectroscopy [@Wilson2021-xg;@Clarke2021-mb;@Songeon2023-ye] to ASL [@Woods2022-ud], diffusion MRI [@Cai2021-hx;@Tristan-Vega2022-vh], CEST [@Huang2022-gk], magnetization transfer [@Rowley2021-yy;@Malik2020-qk;@Asslander2022-dk;@boudreau2024longitudinal;@badji2020cross], B1 mapping [@Delgado2020-cj] and relaxometry [@Kapre2020-lz;@Lee2019-xr;@Whitaker2020-ir;@Balbastre2022-cy;@boudreau2024repeat;@keenan2025t1@hafyane2018let].
+Quantitative MRI articles are powerful showcases of reproducible research practices, as they usually come with fitting models that can be shared on public code repositories. The applications range from MR spectroscopy [@Wilson2021-xg;@Clarke2021-mb;@Songeon2023-ye] to ASL [@Woods2022-ud], diffusion MRI [@Cai2021-hx;@Tristan-Vega2022-vh], CEST [@Huang2022-gk], magnetization transfer [@Rowley2021-yy;@Malik2020-qk;@Asslander2022-dk;@boudreau2024longitudinal], B1 mapping [@Delgado2020-cj] and relaxometry [@Kapre2020-lz;@Lee2019-xr;@Whitaker2020-ir;@Balbastre2022-cy;@boudreau2024repeat;@keenan2025t1@hafyane2018let].
 
-Transparent reconstruction and analysis pipelines are also prominently featured in the reproducible research insights, including methods for real-time MRI [@Zhao2021-ju], parallel imaging [@Hess2021-fl], large-scale volumetric dynamic imaging [@Ong2020-xo], pharmacokinetic modeling of DCE-MRI [@ahmed2020pharmacokinetic], phase unwrapping [@Dymerska2021-tw], hyperpolarized MRI [@Tustison2021-gh], Dixon imaging [@Ryden2020-wf] and X-nuclei imaging [@McCallister2021-gj]. Deep learning is increasingly present in the reproducibility conversation, as MRI researchers are trying to shine a light on AI-driven workflows for phase-focused applications [@Cole2021-xo], CEST [Huang2022-gk], diffusion-weighted imaging [@Barbieri2020-ue], myelin water imaging [@Lee2020-xf], B1 estimation [@Abbasi-Rad2021-tt], and tissue segmentation [@Estrada2020-xf].
+Transparent reconstruction and analysis pipelines [@maier2021cg] are also prominently featured in the reproducible research insights, including methods for real-time MRI [@Zhao2021-ju], parallel imaging [@Hess2021-fl], large-scale volumetric dynamic imaging [@Ong2020-xo], pharmacokinetic modeling of DCE-MRI [@ahmed2020pharmacokinetic], phase unwrapping [@Dymerska2021-tw], hyperpolarized MRI [@Tustison2021-gh], Dixon imaging [@Ryden2020-wf] and X-nuclei imaging [@McCallister2021-gj]. Deep learning is increasingly present in the reproducibility conversation, as MRI researchers are trying to shine a light on AI-driven workflows for phase-focused applications [@Cole2021-xo], CEST [@Huang2022-gk], diffusion-weighted imaging [@Barbieri2020-ue], myelin water imaging [@Lee2020-xf], B1 estimation [@Abbasi-Rad2021-tt], and tissue segmentation [@Estrada2020-xf].
 
 Reproducibility of MRI hardware is still in its infancy, but a recent study integrated RF coils with commercial field cameras for ultrahigh-field MRI, exemplifying the coupling of hardware advancements with software solutions. The authors shared the design CAD files, performance data, and image reconstruction code, ensuring that hardware innovations can be reproduced and utilized by other researchers [@Gilbert2022-io].
 
-Finally, vendor-neutral pulse sequences are putting interoperability and transparency at the center of the reproducibility landscape. Pulseq and gammaSTAR are vendor-neutral platforms enabling the creation of MRI pulse sequences that are compatible with three major MRI vendors [@Layton2017-nz;Cordes2020-ys]. In addition, VENUS is an end-to-end vendor-neutral workflow that was shown to reduce inter-vendor variability in quantitative MRI measurements of myelin, thereby strengthening the reproducibility of quantitative MRI research and facilitating multicenter clinical trials [@Karakuzu2020-ng;@Karakuzu2022-cb].
+Finally, vendor-neutral pulse sequences are putting interoperability and transparency at the center of the reproducibility landscape. Pulseq and gammaSTAR are vendor-neutral platforms enabling the creation of MRI pulse sequences that are compatible with three major MRI vendors [@Layton2017-nz;@Cordes2020-ys]. In addition, VENUS is an end-to-end vendor-neutral workflow that was shown to reduce inter-vendor variability in quantitative MRI measurements of myelin, thereby strengthening the reproducibility of quantitative MRI research and facilitating multicenter clinical trials [@Karakuzu2020-ng;@Karakuzu2022-cb].
 
 #### Data sharing
 
