@@ -37,8 +37,8 @@ While numerous articles have addressed the reproducibility of clinical MRI studi
 
 However, performing a thorough meta-analysis or a systematic review of these studies in the context of reproducibility presents challenges due to: 
 
-* i) the diversity in study designs across various MRI development subfields, and 
-* ii) the absence of standardized statistics to gauge reproducibility performance. 
+* the diversity in study designs across various MRI development subfields, and 
+* the absence of standardized statistics to gauge reproducibility performance. 
 
 Considering these challenges, we opted to conduct a mini-review leveraging the semantic extraction capabilities of the advanced language models. Specifically, we trained a custom **GPT** model using a knowledge base constructed for a selection of articles coupled with web scraping of content pertaining to their reproducibility.
 
@@ -56,37 +56,12 @@ We performed a literature search to identify where these studies fall in the bro
 
 Among `1098` articles included in the Semantic Scholar records, SPECTER vector embeddings [@Cohan2020-tw] were available for `612` articles, representing the semantics of publicly accessible content in abstracts and titles. For these articles, the high-dimensional semantic information captured by the word embeddings was visualized using UMAP {cite:p}`McInnes2018-sc` \autoref{fig1stat}. This visualization allowed the inspection of the semantic clustering of the articles, facilitating a deeper understanding of their contextual placement within the reproducibility landscape. In addition, the following diagram illustrates the hierarchical clustering of the selected studies in the broader literature:
 
-```{mermaid}
-:align: center
-flowchart LR
-  subgraph Data collection
-  A[/Query terms/] --> B
-  E[Web scrape] -- 31 --> F>MRM Highlight interviews]
-  end
-  B[[Semantic Scholar API]] -- 1098 --> C>Total records]
-  C>Total records] --612--> D>Records w/ embedding]
-  D --31--> H>MRM Articles]
-  F -- match --> D
-  D --> G(((UMAP)))
-```
+
 
 ## Creating a knowledge base for a custom GPT
 
 We created a custom GPT model, designed specifically to assist in the analysis and synthesis of information pertaining to the `31` reproducible research insights. The knowledge base of this retrieval-augmented generation framework incorporates GPT-4 summaries of the abstracts from `31` MRM articles, merged with their respective MRM Highlights interviews, as well as the titles and keywords associated with each article (refer to Appendix A). This compilation was assembled via API calls to OpenAI on November 23, 2023, using the `gpt-4-1106-preview` model.
 
-```{mermaid}
-:align: center
-flowchart LR
-  A>MRM Highlights Interviews] --> C
-  B>Respective MRM Articles]--> C
-  C(combine) --> D(((GPT-4)))
-  D --> G[(Summary)]
-  G --> H
-  D --> H["Custom GPT"]
-  subgraph RRInsights
-  H <--> I[User]
-  end
-```
 
 This specialized GPT, named `RRInsights`, is tailored to process and interpret the provided data in the context of reproducibility, for the system prompts please see Appendix B. 
 
@@ -156,3 +131,5 @@ Time and again, the literature shows that aligning the acquisitions (i.e., makin
 
 The initiatives and tools identified in this review serve as a blueprint for future studies to replicate successful practices, safeguard against bias, and accelerate neuroscientific discovery. As MRI research continues to advance, upholding the principles of reproducibility will be essential to maintaining the integrity and translational potential of its findings.
 We also hope that our methodology in generating this review will pave the way for future studies that leverage large language models to create unique literature insights. In particular, we believe that the RRInsights GPT can serve as a blueprint for generating a scoping review [@mak2022steps] and inspire other scientists to experiment with the format of scientific publications in the age of AI.
+
+# References
