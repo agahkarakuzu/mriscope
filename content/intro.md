@@ -111,10 +111,14 @@ The MRI systems cluster was predominantly composed of articles published in MRM,
 
 ::::{figure} #fig1-cell
 :label: fig1
+:align: center
+:width: 850px
+:height: 850px
+
 Edge-bundled connectivity of the 612 articles identified by the literature search. A notable cluster is formed by most of the MRM articles that were featured in the reproducible research insights (purple nodes), particularly in the development of MRI systems. Few other selected articles fell at the intersection of MRI systems, deep learning, and workflows. Notable clusters for other studies (pink) are annotated by gray circles.
 
 :::{note}
-The scaling between the edge bundled connectivity (2D in the background) and the UMAP (scatter plot in the foreground) may not be preserved during the conversion to the html format. When done properly, it should appear as the static version ([#fig1stat]()) of the figure.
+The scaling between the edge bundled connectivity (2D in the background) and the UMAP (scatter plot in the foreground) may not be preserved during the conversion to the html format. When done properly, it should appear as the static version ([](#fig1stat)) of the figure.
 :::
 ::::
 
