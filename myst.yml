@@ -83,3 +83,5 @@ project:
     - content/word_cloud.ipynb
 site:
   template: article-theme
+  options:
+    numbered_references: true
