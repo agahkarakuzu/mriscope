@@ -135,9 +135,10 @@ Edge-bundled connectivity of the 612 articles identified by the literature searc
 
 ## Custom GPT for reproducibility insights
 
-Through its advanced natural language processing capabilities, RRInsights can efficiently analyze the scoped literature, extract key insights, and generate comprehensive overviews of the research papers focusing on MRI technology. The custom GPT is available at https://chat.openai.com/g/g-5uDwBlnx4-rrinsights (requires subscription as of May 2024).
+Through its advanced natural language processing capabilities, RRInsights can efficiently analyze the scoped literature, extract key insights, and generate comprehensive overviews of the research papers focusing on MRI technology [](#gptses). The custom GPT is available at https://chat.openai.com/g/g-5uDwBlnx4-rrinsights (requires subscription as of May 2024).
 
 :::{figure} #gptsession
+:label: gptses
 
 Automated interaction with GPT4, iterating over all (31) seleted records
 :::
