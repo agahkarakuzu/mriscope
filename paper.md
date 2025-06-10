@@ -1,9 +1,10 @@
 ---
-title: 'A scoping review of reproducible research practices in MRI'
+title: 'Leveraging Large Language Models for Interactive Exploration of MRI Research Reproducibility: A Self-Evolving Review'
 tags:
-  - MRI
-  - Reproducibility
-  - Scoping review
+  - Interactive Literature Review
+  - MRI Reproducibility
+  - Large Language Models
+  - AI-Assisted Systematic Review
 authors:
   - name: Agah Karakuzu
     orcid: 0000-0001-7283-271X
@@ -27,7 +28,11 @@ bibliography: paper.bib
 
 # Abstract
 
-Magnetic resonance imaging has progressed significantly with the introduction of advanced computational methods and novel imaging techniques, but their wider adoption hinges on their reproducibility. This concise review synthesizes reproducible research insights from recent MRI articles to examine the current state of reproducibility in neuroimaging, highlighting key trends and challenges. It also provides a custom GPT model, designed specifically for aiding in an automated analysis and synthesis of information pertaining to the reproducibility insights associated with the articles at the core of this review.
+This interactive version accompanies the article published in Magnetic Resonance in Medical Sciences [@Karakuzu2024rev], providing a reproducible and online-executable implementation designed to realize the self-evolving functionality described in the original work. 
+
+Magnetic resonance imaging has progressed significantly with the introduction of advanced computational methods and novel imaging techniques, but their wider adoption hinges on their reproducibility. This concise review synthesizes reproducible research insights from recent MRI articles to examine the current state of reproducibility in neuroimaging, highlighting key trends and challenges. 
+
+Unlike the static published version, this interactive platform leverages a custom GPT model designed specifically for automated analysis and synthesis of information pertaining to reproducibility insights, enabling continuous evolution of the review as new literature emerges. Readers can directly engage with the computational analyses, modify parameters, and contribute to the ongoing synthesis, transforming traditional literature review into a dynamic, community-driven resource that adapts and grows with the field.
 
 # Introduction
 
@@ -42,7 +47,7 @@ However, performing a thorough meta-analysis or a systematic review of these stu
 
 Considering these challenges, we opted to conduct a mini-review leveraging the semantic extraction capabilities of the advanced language models. Specifically, we trained a custom **GPT** model using a knowledge base constructed for a selection of articles coupled with web scraping of content pertaining to their reproducibility.
 
-With this mini-review we aim to examine the current landscape of reproducible research practices across various MRI studies, drawing attention to common strategies, tools, and repositories used to achieve reproducible outcomes. We anticipate that this approach provides a living review that can be automatically updated to accommodate the continuously expanding breadth of methodologies, helping us identify commonalities and discrepancies across studies.
+With this mini-review we aim to examine the current landscape of reroducible research practices across various MRI studies, drawing attention to common strategies, tools, and repositories used to achieve reproducible outcomes. We anticipate that this approach provides a living review that can be automatically updated to accommodate the continuously expanding breadth of methodologies, helping us identify commonalities and discrepancies across studies.
 
 # Methodology 
 

@@ -1,8 +1,8 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 project:
-  title: 'Reproducible research practices in magnetic resonance neuroimaging'
-  subtitle: A review informed by advanced language models
+  title: Leveraging Large Language Models for Interactive Exploration of MRI Research Reproducibility
+  subtitle: A Self-Evolving Review
   thumbnail: banner.jpg
   thebe:
     binder:
@@ -56,10 +56,10 @@ project:
       country: North Macedonia
       postal_code: 1000
   keywords:
-    - quantitative MRI
-    - reproducibility
-    - vendor-neutral
-    - standardization
+    - Interactive Literature Review
+    - MRI Reproducibility
+    - Large Language Models
+    - AI-Assisted Systematic Review
   github: https://github.com/agahkarakuzu/mriscope
   banner: banner.jpg
   venue: Neurolibre

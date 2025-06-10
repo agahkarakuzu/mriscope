@@ -32,6 +32,10 @@ Magnetic resonance imaging has progressed significantly with the introduction of
 
 # Introduction
 
+:::{note}
+This interactive version accompanies the article published in Magnetic Resonance in Medical Sciences [@Karakuzu2024rev], providing a reproducible and online-executable implementation designed to realize the self-evolving functionality described in the original work. 
+:::
+
 Reproducibility is a cornerstone of scientific inquiry, particularly relevant for data-intensive and computationally demanding fields of research, such as magnetic resonance imaging (MRI) [@Stikov2019-hp]. Ensuring reproducibility thus poses a unique set of challenges and necessitates the diligent application of methods that foster transparency, verification, and interoperability of research findings. 
 
 While numerous articles have addressed the reproducibility of clinical MRI studies, few have looked at the reproducibility of the MRI methodology underpinning these studies. This is understandable given that the MRI development community is smaller, driven by engineers and physicists, with modest representation from clinicians and statisticians. 
